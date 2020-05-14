@@ -1,7 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react';
- 
+
 import {
   AppRegistry,
   StyleSheet,
@@ -19,29 +19,33 @@ class ScanScreen extends Component {
       console.error('An error occured', err)
     );
   };
- 
+  //양준석은 바보다
   render() {
     return (
-      <QRCodeScanner
-        onRead={this.onSuccess}
-        flashMode={RNCamera.Constants.FlashMode.torch}
-        topContent={
-          <Text style={styles.centerText}>
-            Go to{' '}
-            <Text style={styles.textBold}>wikipedia.org/wiki/QR_code</Text> on
+      <React.Fragment>
+        {/* <QRCodeScanner
+          onRead={this.onSuccess}
+          flashMode={RNCamera.Constants.FlashMode.torch}
+          topContent={
+            <Text style={styles.centerText}>
+              Go to{' '}
+              <Text style={styles.textBold}>wikipedia.org/wiki/QR_code</Text> on
             your computer and scan the QR code.
           </Text>
-        }
-        bottomContent={
-          <TouchableOpacity style={styles.buttonTouchable}>
-            <Text style={styles.buttonText}>OK. Got it!</Text>
-          </TouchableOpacity>
-        }
-      />
+          }
+
+          bottomContent={
+            <TouchableOpacity style={styles.buttonTouchable}>
+              <Text style={styles.buttonText}>OK. Got it!</Text>
+            </TouchableOpacity>
+          }
+        /> */}
+        <div>양준석은 바보다</div>
+      </React.Fragment>
     );
   }
 }
- 
+
 const styles = StyleSheet.create({
   centerText: {
     flex: 1,
@@ -61,7 +65,7 @@ const styles = StyleSheet.create({
     padding: 16
   }
 });
- 
+
 AppRegistry.registerComponent('default', () => ScanScreen);
 
 
@@ -92,7 +96,7 @@ AppRegistry.registerComponent('default', () => ScanScreen);
 //     <View style={styles.container}>
 //       <Text>Open up App.js to start working on your app!!!!!!!</Text>
 //       <Button title="yang" onPress={() => console.log("dsds")}>
-        
+
 //       </Button>
 //     </View>
 //   );
