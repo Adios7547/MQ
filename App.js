@@ -40,7 +40,7 @@ class ScanScreen extends Component {
             </TouchableOpacity>
           }
         /> */}
-        <div>양준석은 바보다</div>
+        <div>양준석은 멍청이다</div>
       </React.Fragment>
     );
   }
